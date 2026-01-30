@@ -4,9 +4,17 @@ AI-Powered Manifestation Diary | AI 顯化日記 - Write your dreams, AI helps y
 
 ## 概念 / Concept
 
-MindCanvas combines the power of manifestation journaling with artificial intelligence to help users transform their thoughts into reality.
+MindCanvas (ManifestFlow) is an email-based personal growth system that delivers AI-enhanced manifestation journaling directly to your inbox. Instead of requiring you to open an app, it brings the journaling experience to you through thoughtful, personalized emails that guide your manifestation practice.
 
-意識畫布結合顯化日記與人工智能的力量，幫助用戶將思想轉化為現實。
+MindCanvas (ManifestFlow) 是一個基於郵件的個人成長系統，通過電子郵件直接為您提供 AI 增強的顯化日記。無需打開應用程序，它會通過精心設計的個人化郵件引導您的顯化練習。
+
+**Key Differentiator / 核心差異化：**
+- **Push-based engagement** — The journal comes to you, not the other way around
+  **主動式參與** — 日記會主動找上您，而不是您去尋找日記
+- **Deep AI coaching** — Pattern recognition, personalized insights, and growth tracking
+  **深度 AI 教練** — 模式識別、個人化見解和成長追蹤
+- **Ritualistic intimacy** — Email creates a sacred, personal space for reflection
+  **儀式感與親密感** — 郵件創造一個神聖、私密的反思空間
 
 ## 核心功能 / Core Features
 
@@ -62,6 +70,12 @@ npm run dev
 # Build for production
 npm run build
 ```
+
+## 完整研究 / Full Research
+
+Comprehensive project research including concept, features, technical architecture, and development roadmap is available in `research.md`.
+
+完整的專案研究（包括概念、功能、技術架構和開發路線圖）可在 `research.md` 中找到。
 
 ## License
 
