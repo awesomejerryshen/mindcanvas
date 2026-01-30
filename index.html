@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCanvas | 意識畫布 - AI-Powered Manifestation Diary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        [data-lang="zh"] { display: none; }
+        html[lang="zh"] [data-lang="en"] { display: none; }
+        html[lang="zh"] [data-lang="zh"] { display: block; }
+        html[lang="zh"] [data-lang="zh-inline"] { display: inline; }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Language Toggle -->
+    <nav class="fixed top-0 right-0 p-6 z-50">
+        <button id="langToggle" class="glass text-white px-4 py-2 rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
+            <span id="langIcon">🌐</span>
+            <span data-lang="en">繁體中文</span>
+            <span data-lang="zh">English</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center text-white px-6">
+        <div class="text-center max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
+                <span data-lang="en">MindCanvas</span>
+                <span data-lang="zh">意識畫布</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-4 opacity-90" data-lang="en">AI-Powered Manifestation Diary</p>
+            <p class="text-xl md:text-2xl mb-8 opacity-90" data-lang="zh">AI 顯化日記 - 用思考創造現實</p>
+            <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-80">
+                <span data-lang="en">Write your dreams. AI helps you manifest them. Daily prompts keep you on track.</span>
+                <span data-lang="zh">寫下你的夢想。AI 幫你顯化。每日提醒讓你保持專注。</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
+                    <span data-lang="en">Get Started Free</span>
+                    <span data-lang="zh">免費開始使用</span>
+                </button>
+                <button class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
+                    <span data-lang="en">Watch Demo</span>
+                    <span data-lang="zh">觀看演示</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6 bg-white/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">
+                <span data-lang="en">How It Works</span>
+                <span data-lang="zh">如何運作</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card glass rounded-2xl p-8 transition-all duration-300">
+                    <div class="text-5xl mb-4">📝</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        <span data-lang="en">Daily Journal</span>
+                        <span data-lang="zh">每日日記</span>
+                    </h3>
+                    <p class="text-white/80" data-lang="en">Write your goals, dreams, and intentions. AI analyzes patterns and provides insights.</p>
+                    <p class="text-white/80" data-lang="zh">寫下你的目標、夢想和意圖。AI 分析模式並提供見解。</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card glass rounded-2xl p-8 transition-all duration-300">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        <span data-lang="en">AI Coach</span>
+                        <span data-lang="zh">AI 教練</span>
+                    </h3>
+                    <p class="text-white/80" data-lang="en">Get personalized affirmations and suggestions to refine your manifestation language.</p>
+                    <p class="text-white/80" data-lang="zh">獲得個人化的肯定語和建議，讓你的顯化語言更精確。</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card glass rounded-2xl p-8 transition-all duration-300">
+                    <div class="text-5xl mb-4">📧</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        <span data-lang="en">Email Prompts</span>
+                        <span data-lang="zh">郵件提醒</span>
+                    </h3>
+                    <p class="text-white/80" data-lang="en">Receive daily prompts and reflections directly in your inbox to stay consistent.</p>
+                    <p class="text-white/80" data-lang="zh">每天收到專屬的提示和反思，保持持續的動力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">
+                <span data-lang="en">Powerful Features</span>
+                <span data-lang="zh">強大功能</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass rounded-xl p-6 flex items-start gap-4">
+                    <span class="text-3xl">📊</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">
+                            <span data-lang="en">Progress Tracking</span>
+                            <span data-lang="zh">進度追蹤</span>
+                        </h4>
+                        <p class="text-white/80" data-lang="en">Visualize your manifestation journey over time</p>
+                        <p class="text-white/80" data-lang="zh">視覺化你的顯化旅程</p>
+                    </div>
+                </div>
+                <div class="glass rounded-xl p-6 flex items-start gap-4">
+                    <span class="text-3xl">✨</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">
+                            <span data-lang="en">Smart Affirmations</span>
+                            <span data-lang="zh">智慧肯定語</span>
+                        </h4>
+                        <p class="text-white/80" data-lang="en">AI generates personalized affirmations based on your entries</p>
+                        <p class="text-white/80" data-lang="zh">AI 根據你的條目生成個人化的肯定語</p>
+                    </div>
+                </div>
+                <div class="glass rounded-xl p-6 flex items-start gap-4">
+                    <span class="text-3xl">🎯</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">
+                            <span data-lang="en">Goal Refinement</span>
+                            <span data-lang="zh">目標優化</span>
+                        </h4>
+                        <p class="text-white/80" data-lang="en">AI helps you make goals more specific and achievable</p>
+                        <p class="text-white/80" data-lang="zh">AI 幫助你讓目標更具體且可實現</p>
+                    </div>
+                </div>
+                <div class="glass rounded-xl p-6 flex items-start gap-4">
+                    <span class="text-3xl">🌍</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">
+                            <span data-lang="en">Bilingual Support</span>
+                            <span data-lang="zh">雙語支援</span>
+                        </h4>
+                        <p class="text-white/80" data-lang="en">Full support for English and Traditional Chinese</p>
+                        <p class="text-white/80" data-lang="zh">完整支援英文和繁體中文</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-white/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                <span data-lang="en">Start Manifesting Today</span>
+                <span data-lang="zh">今天就開始顯化</span>
+            </h2>
+            <p class="text-xl text-white/80 mb-8">
+                <span data-lang="en">Join thousands of people using AI to transform their thoughts into reality.</span>
+                <span data-lang="zh">加入數千人的行列，用 AI 將想法轉化為現實。</span>
+            </p>
+            <button class="bg-white text-purple-600 px-10 py-5 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
+                <span data-lang="en">Create Free Account</span>
+                <span data-lang="zh">建立免費帳號</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 text-center text-white/60">
+        <p data-lang="en">© 2026 MindCanvas. Built with 💜 for dreamers.</p>
+        <p data-lang="zh">© 2026 意識畫布。為夢想者而生 💜</p>
+    </footer>
+
+    <script>
+        // Language Toggle
+        let currentLang = 'en';
+        const html = document.documentElement;
+        const langToggle = document.getElementById('langToggle');
+
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            html.setAttribute('lang', currentLang);
+            localStorage.setItem('mindcanvas-lang', currentLang);
+        });
+
+        // Load saved language preference
+        const savedLang = localStorage.getItem('mindcanvas-lang');
+        if (savedLang) {
+            currentLang = savedLang;
+            html.setAttribute('lang', currentLang);
+        }
+
+        // Add scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, section > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
